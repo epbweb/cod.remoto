@@ -1,4 +1,4 @@
-<!DOCTYPE>
+﻿<!DOCTYPE>
 <html>
 <head>
 	<title></title>
@@ -15,17 +15,18 @@
 .fixo2{
 	position: fixed;
 	z-index: -1;	
+	top: -100px;
 }
 
 
 .relativo{
 	position: relative;
-	top: 600px;
+	top: 800px;
 }
 
 .relativo2{
 	position: relative;
-	top: 900px;
+	top: 1600px;
 }
 
 #bloco-azul{
@@ -44,7 +45,7 @@
 }
 #bloco-vermelho{
 	width: 100%;
-	height: 1000px;
+	height: 1600px;
 	background-color:red;
 	color: #fff;
 	font-size: 1.2em;
@@ -62,7 +63,7 @@
       $("#bloco-azul").removeClass("fixo");
       $("#bloco-verde").removeClass("relativo");
     };
-        if ($(window).scrollTop() > 600) {
+        if ($(window).scrollTop() > 900) {
       $("#bloco-verde").removeClass("relativo");
       $("#bloco-verde").addClass("fixo2");
       $("#bloco-vermelho").addClass("relativo2");
